@@ -30,11 +30,11 @@ cp .env.example .env
 
 Atualize as variáveis de ambiente do arquivo .env
 ```dosini
-APP_NAME=EspecializaTi
-APP_URL=http://localhost:8180
+APP_NAME=sigimct
+APP_URL=http://localhost:9000
 
 DB_CONNECTION=mysql
-DB_HOST=mysql
+DB_HOST=mysql-sigimct
 DB_PORT=3306
 DB_DATABASE=nome_que_desejar_db
 DB_USERNAME=root
@@ -58,7 +58,7 @@ docker-compose up -d
 
 Acessar o container
 ```sh
-docker-compose exec laravel_8 bash
+docker-compose exec laravel-sigimct bash
 ```
 
 
@@ -75,4 +75,4 @@ php artisan key:generate
 
 
 Acesse o projeto
-[http://localhost:8180](http://localhost:8180)
+(http://localhost:9000)
